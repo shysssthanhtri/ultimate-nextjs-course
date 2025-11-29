@@ -1,5 +1,5 @@
 import React from "react";
-import type { Metadata } from "next";
+import type {Metadata} from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 
@@ -16,8 +16,11 @@ const spaceGrotesk = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "DevFlow",
-  description: "A alternative version of Stack Overflow.",
+    title: "DevFlow",
+    description: "A community-driven platform for asking and answering programming questions. Get help, share knowledge, and collaborate with developers from around the world. Explore topics in web development, mobile app development, algorithms, data structures, and more.",
+    icons: {
+      icon: "/images/site-logo.svg"
+    }
 };
 
 export default function RootLayout({
