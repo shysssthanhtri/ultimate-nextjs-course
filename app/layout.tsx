@@ -1,16 +1,18 @@
 import React from "react";
 import type { Metadata } from "next";
-import { Inter, Space_Grotesk } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 
-const inter = Inter({
-  variable: "--font-inter",
-  subsets: ["latin"],
+const inter = localFont({
+    src: "./fonts/InterVF.ttf",
+    variable: "--font-inter",
+    weight: "100 200 300 400 500 700 800 900",
 });
 
-const spaceGrotesk = Space_Grotesk({
-  variable: "--font-space-grotesk",
-  subsets: ["latin"],
+const spaceGrotesk = localFont({
+    src: "./fonts/SpaceGroteskVF.ttf",
+    variable: "--font-space-grotesk",
+    weight: "300 400 500 700",
 });
 
 export const metadata: Metadata = {
