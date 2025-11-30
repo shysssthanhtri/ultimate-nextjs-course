@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { SocialButton } from "@/components/forms/SocialButton";
+import { SocialButton } from "@/components/SocialButton";
 import { toast } from "sonner";
 import { signIn } from "next-auth/react";
 import { ROUTES } from "@/constants/routes";
